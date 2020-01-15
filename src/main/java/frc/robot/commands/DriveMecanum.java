@@ -31,12 +31,14 @@ public class DriveMecanum extends Command {
   @Override
   protected void execute() {
     double x, y, twist;
-    x = OI.deadZone(OI.controller.getX(GenericHID.Hand.kLeft), RobotMap.getTranslationaldeadzone());
-    y = OI.deadZone(OI.controller.getY(GenericHID.Hand.kLeft), RobotMap.getTranslationaldeadzone());
-    twist = OI.deadZone(OI.controller.getX(GenericHID.Hand.kRight), RobotMap.getRotationaldeadzone());
-    if(Robot.getChildMode()){x/=4;y/=5;twist/=5;}
-
-    Robot.drivetrain.getDrivetrain().driveCartesian(x, -y, twist);
+    y = OI.steeringWheel.getThrottle();
+    twist = OI.steeringWheel.getX(GenericHID.Hand.kLeft);
+//    x = OI.deadZone(OI.controller.getX(GenericHID.Hand.kLeft), RobotMap.getTranslationaldeadzone());
+//    y = OI.deadZone(OI.controller.getY(GenericHID.Hand.kLeft), RobotMap.getTranslationaldeadzone());
+//    twist = OI.deadZone(OI.controller.getX(GenericHID.Hand.kRight), RobotMap.getRotationaldeadzone());
+//    if(Robot.getChildMode()){x/=4;y/=5;twist/=5;}
+//
+    Robot.drivetrain.getDrivetrain().driveCartesian(0, -y, twist);
   }
 
   // Make this return true when this Command no longer needs to run execute()

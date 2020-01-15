@@ -49,9 +49,11 @@ public class OI {
   public static Joystick joystick;
   public static JoystickButton button2,button3,button4,button5,button6,button7,button8,button9,button10;
   public static JoystickButton button11,button12;
+  public static Joystick steeringWheel;
   public OI(){
     controller = new XboxController(0);
     joystick = new Joystick(1);
+    steeringWheel = new Joystick(2);
     button3 = new JoystickButton(joystick,3);
     button2 = new JoystickButton(joystick,2);
     button4 = new JoystickButton(joystick,4);

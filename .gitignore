@@ -156,5 +156,25 @@ gradle-app.setting
 .settings/
 bin/
 
+.idea/
 
 # End of https://www.gitignore.io/api/c++,java,linux,macos,gradle,windows,visualstudiocode
+.idea/compiler.xml
+.idea/gradle.xml
+.idea/libraries/Gradle__com_ctre_phoenix_api_java_5_14_1.xml
+.idea/libraries/Gradle__com_ctre_phoenix_wpiapi_java_5_14_1.xml
+.idea/libraries/Gradle__com_revrobotics_frc_SparkMax_java_1_1_9.xml
+.idea/libraries/Gradle__edu_wpi_first_cameraserver_cameraserver_java_2019_4_1.xml
+.idea/libraries/Gradle__edu_wpi_first_cscore_cscore_java_2019_4_1.xml
+.idea/libraries/Gradle__edu_wpi_first_hal_hal_java_2019_4_1.xml
+.idea/libraries/Gradle__edu_wpi_first_ntcore_ntcore_java_2019_4_1.xml
+.idea/libraries/Gradle__edu_wpi_first_thirdparty_frc2019_opencv_opencv_java_3_4_4_4.xml
+.idea/libraries/Gradle__edu_wpi_first_wpilibj_wpilibj_java_2019_4_1.xml
+.idea/libraries/Gradle__edu_wpi_first_wpiutil_wpiutil_java_2019_4_1.xml
+.idea/libraries/Gradle__junit_junit_4_12.xml
+.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules/FRC2019-Steeringwheel.main.iml
+.idea/modules/FRC2019-Steeringwheel.test.iml
+.idea/vcs.xml
